@@ -1,16 +1,30 @@
-import { useRoutes } from 'react-router-dom';
+import { Outlet, useRoutes } from 'react-router-dom';
 
 import { Top } from '@/pages/Top'
 import { Detail } from '@/pages/Detail'
+import { MainLayout } from '@/components/laytouts/MainLayout';
+
+const App = () => {
+  return (
+    <MainLayout>
+      <Outlet />
+    </MainLayout>
+  )
+}
+
+export const routes = [
+  {
+    path: '/',
+    element: <App />,
+    children: [
+      { path: '', element: <Top /> },
+      { path: '/detail', element: <Detail /> },
+    ],
+  },
+];
 
 export const AppRoutes = () => {
-
-  const commonRoutes = [
-    { path: '/', element: <Top /> },
-    { path: '/detail', element: <Detail /> }
-  ];
-
-  const element = useRoutes([...commonRoutes]);
+  const element = useRoutes([...routes]);
 
   return <>{element}</>;
 };
