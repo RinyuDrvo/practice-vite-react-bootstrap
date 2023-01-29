@@ -5,9 +5,9 @@ viteによるreactアプリケーションの環境構築と
 react-bootstrapを用いた実装の練習
 
 ## 使用ライブラリ
-- [ ] react-router
-- [ ] react-bootstrap
-- [ ] tanstack table
+- [x] react-router
+- [x] react-bootstrap
+- [x] tanstack table
 
 ## 実装目標
 - [ ] ページ遷移
