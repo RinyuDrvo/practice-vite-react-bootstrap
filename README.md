@@ -10,6 +10,9 @@ react-bootstrapを用いた実装の練習
 - [x] tanstack table
 - [ ] react-i18next
 - [ ] react-hook-form
+- [ ] json-server
+- [x] eslint
+- [ ] prettier
 
 ## 実装目標
 - [x] ページ遷移
@@ -24,6 +27,10 @@ react-bootstrapを用いた実装の練習
 - [ ] 入力フォーム
   - [ ] バリデーション
 - [ ] ユニットテスト
+- [ ] モックサーバー
+- [x] リンター
+- [ ] フォーマッター
+- [ ] ブラウザの戻る閉じる操作で確認モーダルを出す
 
 # コマンド
 
