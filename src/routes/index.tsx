@@ -1,5 +1,5 @@
 import { Outlet, useRoutes } from 'react-router-dom';
-
+import React from 'react';
 import { Top } from '@/pages/Top'
 import { Detail } from '@/pages/Detail'
 import { MainLayout } from '@/components/laytouts/MainLayout';

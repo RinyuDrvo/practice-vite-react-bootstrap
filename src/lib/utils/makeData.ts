@@ -29,8 +29,8 @@ const newCompany = (): Company => {
 /** テーブル用ダミーデータの生成 */
 export const makeData = (...lens: number[]) => {
   const makeDataLevel = (depth = 0): Company[] => {
-    const len = lens[depth]!
-    return range(len).map((d): Company => {
+    const len = lens[depth]
+    return range(len).map((): Company => {
       return {
         ...newCompany(),
         subRows: lens[depth + 1] ? makeDataLevel(depth + 1) : undefined

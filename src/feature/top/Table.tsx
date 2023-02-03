@@ -1,11 +1,28 @@
 import { Table as BTable } from 'react-bootstrap'
 import React from 'react'
 import { Company } from '@/models/Company'
-import { ColumnDef, flexRender, getCoreRowModel, getPaginationRowModel, getSortedRowModel, SortingState, useReactTable } from '@tanstack/react-table'
+import { createColumnHelper, flexRender, getCoreRowModel, getPaginationRowModel, getSortedRowModel, SortingState, useReactTable } from '@tanstack/react-table'
 
 /** テーブル */
-export const Table = ({ data, columns }: { data: Company[], columns: ColumnDef<Company>[] }) => {
+export const Table = ({ data }: { data: Company[] }) => {
   const [sorting, setSorting] = React.useState<SortingState>([])
+  const columnHelper = createColumnHelper<Company>()
+  /** カラム設定 */
+  const columns = [
+    columnHelper.accessor('corporateNumber', {
+      cell: info => info.getValue()
+    }),
+    columnHelper.accessor('name', {
+      cell: info => info.getValue()
+    }),
+    columnHelper.accessor('initialCapital', {
+      cell: info => info.getValue()
+    }),
+    columnHelper.accessor('foundedIn', {
+      cell: info => info.getValue()
+    })
+  ]
+
   const table = useReactTable({
     data,
     columns,
