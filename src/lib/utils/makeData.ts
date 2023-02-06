@@ -3,8 +3,8 @@ import { faker } from '@faker-js/faker'
 
 /** 数値分の配列を生成 */
 const range = (len: number): number[] => {
-  //
-  const arr = []
+  // test commit
+  let arr = []
   for (let i = 0; i < len; i++) {
     arr.push(i)
   }
