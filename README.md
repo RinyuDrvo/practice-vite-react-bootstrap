@@ -1,10 +1,12 @@
 # practice-vite-react-bootstrap
 
 ## 概要
-viteによるreactアプリケーションの環境構築と
-react-bootstrapを用いた実装の練習
+
+vite による react アプリケーションの環境構築と
+react-bootstrap を用いた実装の練習
 
 ## 使用ライブラリ
+
 - [x] react-router
 - [x] react-bootstrap
 - [x] tanstack table
@@ -12,9 +14,10 @@ react-bootstrapを用いた実装の練習
 - [ ] react-hook-form
 - [ ] json-server
 - [x] eslint
-- [ ] prettier
+- [x] prettier
 
 ## 実装目標
+
 - [x] ページ遷移
 - [x] 共通レイアウトコンポーネント
 - [x] テーブル
@@ -29,7 +32,7 @@ react-bootstrapを用いた実装の練習
 - [ ] ユニットテスト
 - [ ] モックサーバー
 - [x] リンター
-- [ ] フォーマッター
+- [x] フォーマッター
 - [ ] ブラウザの戻る閉じる操作で確認モーダルを出す
 
 # コマンド
