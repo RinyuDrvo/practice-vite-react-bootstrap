@@ -12,9 +12,12 @@ react-bootstrap を用いた実装の練習
 - [x] tanstack table
 - [ ] react-i18next
 - [ ] react-hook-form
-- [ ] json-server
+- [ ] msw
 - [x] eslint
 - [x] prettier
+- [x] jest
+- [ ] Testing Library
+- [ ] Selenium
 
 ## 実装目標
 
@@ -29,7 +32,8 @@ react-bootstrap を用いた実装の練習
 - [ ] 多言語対応
 - [ ] 入力フォーム
   - [ ] バリデーション
-- [ ] ユニットテスト
+- [x] ユニットテスト
+- [ ] E2E テスト
 - [ ] モックサーバー
 - [x] リンター
 - [x] フォーマッター
