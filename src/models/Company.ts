@@ -1,11 +1,11 @@
 /** 会社情報 */
 export type Company = {
   /** 会社名 */
-  name: string,
+  name: string
   /** 法人番号 */
-  corporateNumber: number,
+  corporateNumber: number
   /** 資本金(万円) */
-  initialCapital: number,
+  initialCapital: number
   /** 設立年 */
   foundedIn: number
   /** 再帰用 */

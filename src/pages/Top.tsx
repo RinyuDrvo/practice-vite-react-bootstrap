@@ -1,6 +1,6 @@
-import { Table } from "@/feature/top/Table"
-import { makeData } from "@/lib/utils/makeData"
-import React from "react"
+import { Table } from '@/feature/top/Table'
+import { makeData } from '@/lib/utils/makeData'
+import React from 'react'
 
 /** トップページ */
 export const Top = () => {
@@ -8,9 +8,7 @@ export const Top = () => {
   return (
     <>
       <h1>top page</h1>
-      <Table
-        {...{ data }}
-      />
+      <Table {...{ data }} />
     </>
   )
 }

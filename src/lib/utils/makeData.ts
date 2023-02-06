@@ -1,4 +1,4 @@
-import { Company } from "@/models/Company";
+import { Company } from '@/models/Company'
 import { faker } from '@faker-js/faker'
 
 /** 数値分の配列を生成 */
@@ -16,13 +16,13 @@ const newCompany = (): Company => {
     name: faker.company.name(),
     corporateNumber: faker.datatype.number({
       min: 1000000000000,
-      max: 9999999999999
+      max: 9999999999999,
     }),
     initialCapital: faker.datatype.number(99999),
     foundedIn: faker.datatype.number({
       min: 1800,
-      max: 2023
-    })
+      max: 2023,
+    }),
   }
 }
 
@@ -33,7 +33,7 @@ export const makeData = (...lens: number[]) => {
     return range(len).map((): Company => {
       return {
         ...newCompany(),
-        subRows: lens[depth + 1] ? makeDataLevel(depth + 1) : undefined
+        subRows: lens[depth + 1] ? makeDataLevel(depth + 1) : undefined,
       }
     })
   }
