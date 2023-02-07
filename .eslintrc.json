@@ -10,12 +10,24 @@
     "plugin:react-hooks/recommended",
     "prettier"
   ],
-  "overrides": [],
+  "overrides": [
+    {
+      "files": [
+        "**/__tests__/**/*.+(ts|tsx|js)",
+        "**/?(*.)+(spec|test).+(ts|tsx|js)"
+      ],
+      "extends": [
+        "plugin:jest/recommended",
+        "plugin:jest-dom/recommended",
+        "plugin:testing-library/react"
+      ]
+    }
+  ],
   "parserOptions": {
     "ecmaVersion": "latest",
     "project": "./tsconfig.json"
   },
-  "plugins": ["react", "react-hooks"],
+  "plugins": ["react", "react-hooks", "jest", "jest-dom", "testing-library"],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn"
