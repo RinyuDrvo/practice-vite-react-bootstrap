@@ -16,7 +16,7 @@ react-bootstrap を用いた実装の練習
 - [x] eslint
 - [x] prettier
 - [x] jest
-- [ ] Testing Library
+- [x] Testing Library
 - [ ] Selenium
 
 ## 実装目標
@@ -32,7 +32,9 @@ react-bootstrap を用いた実装の練習
 - [ ] 多言語対応
 - [ ] 入力フォーム
   - [ ] バリデーション
-- [x] ユニットテスト
+- [ ] ユニットテスト
+  - [ ] コンポーネントのテスト
+  - [ ] メソッドのテスト
 - [ ] E2E テスト
 - [ ] モックサーバー
 - [x] リンター
