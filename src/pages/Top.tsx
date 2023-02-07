@@ -1,4 +1,4 @@
-import { Table } from '@/feature/top/Table'
+import { Table } from '@/feature/top/components/Table'
 import { makeData } from '@/lib/utils/makeData'
 import React from 'react'
 
