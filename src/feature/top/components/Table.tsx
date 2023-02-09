@@ -1,5 +1,4 @@
 import { Table as BTable } from 'react-bootstrap'
-import React from 'react'
 import { Company } from '@/models/Company'
 import {
   createColumnHelper,
@@ -10,10 +9,11 @@ import {
   SortingState,
   useReactTable,
 } from '@tanstack/react-table'
+import { useState } from 'react'
 
 /** テーブル */
 export const Table = ({ data }: { data: Company[] }) => {
-  const [sorting, setSorting] = React.useState<SortingState>([])
+  const [sorting, setSorting] = useState<SortingState>([])
   const columnHelper = createColumnHelper<Company>()
   /** カラム設定 */
   const columns = [

@@ -1,5 +1,3 @@
-import React from 'react'
-
 /** 詳細ページ */
 export const Detail = () => {
   return (

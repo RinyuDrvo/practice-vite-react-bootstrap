@@ -1,10 +1,10 @@
 import '@testing-library/jest-dom'
 import { render, screen } from '@testing-library/react'
-import { Detail } from '@/pages/Detail'
+import { Top } from '@/pages/Top'
 
-describe('Detail', () => {
+describe('Top', () => {
   test('show header text', () => {
-    render(<Detail />)
+    render(<Top />)
     expect(screen.getByText('detail page')).toBeInTheDocument()
   })
 })
