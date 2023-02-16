@@ -1,8 +1,8 @@
 import { Outlet, useRoutes } from 'react-router-dom'
-import React from 'react'
-import { Top } from '@/pages/Top'
-import { Detail } from '@/pages/Detail'
+import { Top } from '@/pages/top'
+import { Detail } from '@/pages/detail'
 import { MainLayout } from '@/components/laytouts/MainLayout'
+import { detailRoutes } from '@/routes/detail'
 
 const App = () => {
   return (
@@ -14,11 +14,19 @@ const App = () => {
 
 export const routes = [
   {
-    path: '/',
+    path: '',
     element: <App />,
     children: [
-      { path: '', element: <Top /> },
-      { path: '/detail', element: <Detail /> },
+      {
+        path: '/',
+        element: <Top />,
+        default: true,
+      },
+      {
+        path: 'detail',
+        element: <Detail />,
+        children: detailRoutes,
+      },
     ],
   },
 ]

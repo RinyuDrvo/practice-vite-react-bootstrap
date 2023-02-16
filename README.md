@@ -17,7 +17,7 @@ react-bootstrap を用いた実装の練習
 - [x] prettier
 - [x] jest
 - [x] Testing Library
-- [ ] Cypress
+- [x] Cypress
 
 ## 実装目標
 
