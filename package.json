@@ -50,6 +50,7 @@
     "vite": "^4.0.0"
   },
   "lint-staged": {
-    "*.{ts,tsx}": "npm run lint:precommit"
+    "*.{ts,tsx}": "npm run lint:precommit",
+    "*.{ts,tsx,json}": "npm run format"
   }
 }
