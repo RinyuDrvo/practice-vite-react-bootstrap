@@ -12,7 +12,8 @@ react-bootstrap を用いた実装の練習
 - [x] tanstack table
 - [ ] react-i18next
 - [ ] react-hook-form
-- [ ] msw
+- [x] msw
+- [x] axios
 - [x] eslint
 - [x] prettier
 - [x] jest
@@ -38,6 +39,8 @@ react-bootstrap を用いた実装の練習
   - [ ] プッシュ時にテスト実行
 - [ ] E2E テスト
 - [ ] モックサーバー
+  - [ ] API モック
+  - [ ] モックを使用したテスト
 - [x] リンター
   - [x] コミット時にリンター実行
 - [x] フォーマッター
