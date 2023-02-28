@@ -20,6 +20,7 @@ react-bootstrap を用いた実装の練習
 - [x] Testing Library
 - [x] Cypress
 - [ ] React Select
+- [ ] swr
 
 ## 実装目標
 
@@ -51,6 +52,7 @@ react-bootstrap を用いた実装の練習
   - [x] コミット時にフォーマッター実行
 - [ ] ブラウザの戻る閉じる操作で確認モーダルを出す
 - [ ] 無限スクロール
+- [ ] API 取得結果のキャッシュ(useSWR)
 
 # コマンド
 
