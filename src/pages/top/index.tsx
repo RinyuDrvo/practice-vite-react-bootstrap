@@ -1,8 +1,8 @@
-import { Table } from '@/feature/top/components/Table'
+import { Table } from '@/features/top/components/Table'
 import { Company } from '@/models/Company'
 import { useState } from 'react'
 import { Button } from 'react-bootstrap'
-import { getCompanyList } from '@/feature/top/api/getCompanyList'
+import { getCompanyList } from '@/features/top/api/getCompanyList'
 
 /** トップページ */
 export const Top = () => {

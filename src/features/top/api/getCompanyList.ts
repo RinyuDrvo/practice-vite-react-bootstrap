@@ -1,5 +1,5 @@
 import axios, { AxiosResponse } from 'axios'
-import { GetCompanyListResponse } from '@/feature/top/model/GetCompanyListResponse'
+import { GetCompanyListResponse } from '@/features/top/model/GetCompanyListResponse'
 
 export const getCompanyList = (): Promise<
   AxiosResponse<GetCompanyListResponse>
