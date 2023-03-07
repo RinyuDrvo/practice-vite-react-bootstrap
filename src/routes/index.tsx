@@ -1,8 +1,7 @@
 import { Navigate, Outlet, useRoutes } from 'react-router-dom'
-import { Top } from '@/pages/top'
-import { Detail } from '@/pages/detail'
 import { MainLayout } from '@/components/laytouts/MainLayout'
 import { detailRoutes } from '@/routes/detail'
+import { topRoutes } from './top'
 
 const App = () => {
   return (
@@ -12,26 +11,18 @@ const App = () => {
   )
 }
 
+const indexRoutes = [
+  {
+    index: true,
+    element: <Navigate to="top" replace />,
+  },
+]
+
 export const routes = [
   {
     path: '',
     element: <App />,
-    children: [
-      {
-        path: 'top',
-        element: <Top />,
-        default: true,
-      },
-      {
-        path: 'detail',
-        element: <Detail />,
-        children: detailRoutes,
-      },
-      {
-        index: true,
-        element: <Navigate to="top" replace />,
-      },
-    ],
+    children: [...topRoutes, ...detailRoutes, ...indexRoutes],
   },
 ]
 
