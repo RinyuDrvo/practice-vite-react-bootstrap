@@ -1,4 +1,4 @@
-import { Outlet, useRoutes } from 'react-router-dom'
+import { Navigate, Outlet, useRoutes } from 'react-router-dom'
 import { Top } from '@/pages/top'
 import { Detail } from '@/pages/detail'
 import { MainLayout } from '@/components/laytouts/MainLayout'
@@ -18,7 +18,7 @@ export const routes = [
     element: <App />,
     children: [
       {
-        path: '/',
+        path: 'top',
         element: <Top />,
         default: true,
       },
@@ -26,6 +26,10 @@ export const routes = [
         path: 'detail',
         element: <Detail />,
         children: detailRoutes,
+      },
+      {
+        index: true,
+        element: <Navigate to="top" replace />,
       },
     ],
   },

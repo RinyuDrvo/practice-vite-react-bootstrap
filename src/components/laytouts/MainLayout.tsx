@@ -15,7 +15,7 @@ export const MainLayout = ({ children }: MainLayoutProps) => {
             practice-vite-react-bootstrap
           </Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link as={NavLink} to="/">
+            <Nav.Link as={NavLink} to="/top">
               Top
             </Nav.Link>
             <Nav.Link as={NavLink} to="/detail">
