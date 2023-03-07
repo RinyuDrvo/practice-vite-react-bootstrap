@@ -2,15 +2,18 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from '@/App'
 
-if (process.env.NODE_ENV === 'development') {
-  ;(async () => {
+const prepare = async () => {
+  if (process.env.NODE_ENV === 'development') {
     const { worker } = await import('@/test/browser')
-    worker.start()
-  })()
+    return worker.start()
+  }
+  return Promise.resolve()
 }
 
-ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+prepare().then(() => {
+  ReactDOM.createRoot(document.getElementById('root') as HTMLElement).render(
+    <React.StrictMode>
+      <App />
+    </React.StrictMode>
+  )
+})
