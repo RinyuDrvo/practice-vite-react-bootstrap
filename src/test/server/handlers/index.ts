@@ -1,8 +1,4 @@
-import { rest } from 'msw'
-import { makeData } from '@/lib/utils/makeData'
+import { companyHandlers } from '@/test/server/handlers/company'
+import { authHandlers } from '@/test/server/handlers/auth'
 
-export const handlers = [
-  rest.get('/companyList', (req, res, ctx) => {
-    return res(ctx.status(200), ctx.json({ companyList: makeData(3) }))
-  }),
-]
+export const handlers = [...companyHandlers, ...authHandlers]
